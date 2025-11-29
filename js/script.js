@@ -26,14 +26,14 @@ const i18n = {
     'nav.home':'होम','nav.about':'परिचय','nav.services':'सेवाएँ','nav.contact':'संपर्क','nav.book':'नियुक्ति बुक करें',
     'hero.title':'कानूनी समाधान जिन पर आप भरोसा कर सकते हैं','hero.intro':'पवन कुमार गौतम – NABC, NAMC, अपोस्टिल (MEA अटेस्टेशन), नोटरी अटेस्टेशन और परिवार कानून में विशेषज्ञ वकील। न्याय ईमानदारी के साथ प्रदान करने के लिए समर्पित।','hero.role':'अधिवक्ता एवं परिवार वकील, कारकुर्दूमा कोर्ट',
     'cta.whatsapp':'WhatsApp पर चैट करें','cta.book':'अपॉइंटमेंट बुक करें','cta.inquiry':'इनक्वायरी फॉर्म भेजें',
-    'about.title':'पवन कुमार गौतम के बारे में','about.bio':'[Placeholder bio] पवन कुमार गौतम कारकुर्दूमा कोर्ट में क्लाइंट्स की सेवा करने वाले अनुभवी अधिवक्ता हैं। वे व्यावहारिक और संवेदनशील प्रतिनिधित्व पर ध्यान देते हैं।','about.expertTitle':'योग्यता और विशेषज्ञता','about.practiceAreas':'अभ्यास क्षेत्र','about.blurb':'विविध कानूनी आवश्यकताओं के लिए विशिष्ट और अनुभवी परामर्श।',
+    'about.title':'पवन कुमार गौतम के बारे में','about.bio':'[Placeholder bio] पवन कुमार गौतम कारकर्डूमा कोर्ट में क्लाइंट्स की सेवा करने वाले अनुभवी अधिवक्ता हैं। वे व्यावहारिक और संवेदनशील प्रतिनिधित्व पर ध्यान देते हैं।','about.expertTitle':'योग्यता और विशेषज्ञता','about.practiceAreas':'अभ्यास क्षेत्र','about.blurb':'विविध कानूनी आवश्यकताओं के लिए विशिष्ट और अनुभवी परामर्श।',
     'service.nabc':'नॉन अवेलेबिलिटी बर्थ सर्टिफिकेट (NABC)','service.namc':'नॉन अवेलेबिलिटी मैरिज सर्टिफिकेट (NAMC)','service.apostille':'अपोस्टिल (MEA अटेस्टेशन)','service.notary':'नोटरी अटेस्टेशन',
     'service.nabc_short':'NABC (जन्म प्रमाण पत्र)','service.nabc_desc':'मूल रिकॉर्ड न होने पर जन्म प्रमाण पत्र प्राप्त करने के लिए दस्तावेज़ और कोर्ट प्रक्रियाओं में सहायता।',
     'service.namc_short':'NAMC (विवाह प्रमाण पत्र)','service.namc_desc':'जब विवाह प्रमाण पत्र उपलब्ध न हो तो कानूनी प्रमाण प्राप्त करने में सहायता।',
     'service.apostille_short':'अपोस्टिल (MEA अटेस्टेशन)','service.apostille_desc':'विदेश में उपयोग के लिए दस्तावेज़ों के अपोस्टिल/MEA अटेस्टेशन की सम्पूर्ण प्रक्रिया।',
     'service.valid_short':'विदेश में मान्य','service.valid_desc':'दस्तावेज़ों को विदेश में मान्यता दिलवाने की मार्गदर्शिका।',
     'service.notary_short':'नोटरी अटेस्टेशन','service.notary_desc':'हवाला पत्तों और कानूनी दस्तावेज़ों के लिए नोटरी सेवाएँ और अटेस्टेशन।',
-    'service.family_short':'दिल्ली का सर्वश्रेष्ठ पारिवारिक वकील','service.family_desc':'कारकुर्दूमा कोर्ट और अन्य फोरम में संवेदनशील और अनुभवी पारिवारिक कानून प्रतिनिधित्व।',
+    'service.family_short':'दिल्ली का सर्वश्रेष्ठ पारिवारिक वकील','service.family_desc':'कारकर्डूमा कोर्ट और अन्य फोरम में संवेदनशील और अनुभवी पारिवारिक कानून प्रतिनिधित्व।',
     'services.title':'सेवाएँ','services.subtitle':'आपकी ज़रूरतों के अनुसार व्यावहारिक कानूनी समाधान।',
     'contact.title':'संपर्क और पूछताछ','contact.subtitle':'कृपया नीचे का फॉर्म भरें या WhatsApp/फोन से संपर्क करें।',
     'contact.office':'कार्यालय','contact.phoneLabel':'फोन:','contact.emailLabel':'ईमेल:','contact.addressLabel':'पता:','contact.whatsapp':'WhatsApp पर संदेश भेजें','contact.location':'स्थान',
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Ensure modal language updates
+  // Ensure modal language updates (if used)
   const bookModal = document.getElementById('bookModal');
   if(bookModal) bookModal.addEventListener('show.bs.modal', () => { applyLanguage(localStorage.getItem('siteLang')||'en'); });
 });
