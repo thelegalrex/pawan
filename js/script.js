@@ -1,5 +1,5 @@
 // Configuration: replace FORM_ENDPOINT with your endpoint (Formspree, Netlify Forms, or your API)
-const FORM_ENDPOINT = 'https://formspree.io/f/your-form-id'; // <-- replace this
+const FORM_ENDPOINT = 'https://api.web3forms.com/submit'; // <-- replace this
 
 // Lightweight i18n (English + Hindi)
 const i18n = {
@@ -105,13 +105,20 @@ document.addEventListener('DOMContentLoaded', () => {
       if(!contactForm.checkValidity()){
         formAlert.innerHTML = `<div class="alert alert-danger">Please fill required fields correctly.</div>`;
         return;
-      }
-
-      const formData = new FormData(contactForm);
-      formData.append('page', window.location.href);
+      }else{
+		  contactForm.submit();
+		return true;
+	  }
+	  /*	  
+      //const formData = new FormData(contactForm);
+      //formData.append('page', window.location.href);
 
       submitBtn.disabled = true;
       submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...`;
+	  submitBtn.disabled = false;
+      submitBtn.innerHTML = `Submit Query`;
+	  
+	  
 
       try {
         const res = await fetch(FORM_ENDPOINT, {
@@ -135,9 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `Submit Query`;
       }
+	  
+	  */
     });
 
-    clearBtn.addEventListener('click', () => {
+      clearBtn.addEventListener('click', () => {
       contactForm.reset();
       contactForm.classList.remove('was-validated');
       formAlert.innerHTML = '';

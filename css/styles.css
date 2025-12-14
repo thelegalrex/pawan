@@ -33,11 +33,11 @@ body{
 /* Navbar */
 .navbar{ background:transparent; padding:0.9rem 0; z-index:1100; position:relative; }
 .brand-logo{ width:60px; height:60px; object-fit:cover; border-radius:8px; }
-.brand-banner{ width:50px; height:50px;  object-fit:cover; border-radius:8px; }
+.brand-banner{ width:270px; height:50px;  object-fit:cover; border-radius:8px; }
 .brand-title{ font-family: 'Playfair Display', serif; font-weight:700; color:var(--primary); }
 
 /* Scrolled navbar */
-.navbar-scrolled{ background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85)); backdrop-filter: blur(6px); box-shadow: var(--shadow); }
+.navbar-scrolled{ background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0)); backdrop-filter: blur(0px); box-shadow: var(--shadow); }
 
 /* Hero & banners */
 .hero-section{ position:relative; padding:5rem 0; z-index:2; }
@@ -86,9 +86,7 @@ footer{ background:transparent; color:var(--muted); }
   .hero-section{ padding:3.2rem 0; }
 }
 
-/* Reveal */
-.reveal{ opacity:0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.visible{ opacity:1; transform: translateY(0); }
+
 
 .call-us {
             position: fixed;
@@ -116,3 +114,25 @@ footer{ background:transparent; color:var(--muted); }
         .call-us i {
             vertical-align: middle;
         }
+		
+/* Poppy hover underline */
+    ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background: #ffcc80;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+
+    ul li a:hover::after {
+        width: 100%;
+    }
+
+    ul li a:hover {
+        transform: scale(1.1);
+    }
+
