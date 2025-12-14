@@ -469,8 +469,9 @@
             <div class="row g-4">
               <div class="col-lg-7">
                 <div class="card border-0 shadow-sm p-4">
-                  <form id="contactForm" class="needs-validation" novalidate>
-                    <input type="hidden" name="source" value="website">
+                  <form id="contactForm" class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+				  <input type="hidden" name="access_key" value="b98aedd3-c4b9-4928-8e9c-9e917a59ff62">
+				   <input type="hidden" name="subject" value="Email Lead from The Legal Rex">				  
                     <div class="row g-3">
                       <div class="col-md-6">
                         <label for="name" class="form-label">Full name</label>
@@ -527,6 +528,7 @@
                       </div>
                     </div>
                   </form>
+				  
                 </div>
               </div>
               <div class="col-lg-5">
