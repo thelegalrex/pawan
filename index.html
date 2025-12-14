@@ -1,388 +1,619 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pawan Kumar Gautam — Legal Rex</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <meta name="description" content="Pawan Kumar Gautam — Specialist in NABC, NAMC, Apostille, Notary Attestation; Family Lawyer at Karkardooma Court, Delhi.">
-  <meta name="theme-color" content="#0b3d91">
-</head>
-<body>
-  <!-- Decorative shapes -->
-  <div class="float-shapes" aria-hidden="true">
-    <span class="shape s1"></span>
-    <span class="shape s2"></span>
-    <span class="shape s3"></span>
-  </div>
-
-  <!-- Navbar -->
-  <header class="sticky-top">
-    <nav id="mainNavbar" class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#home">
-          <img src="images/logo8.png" alt="Legal Rex logo" class="brand-banner" />
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav.home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav.services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#attestation" data-i18n="nav.attestation">Attestation</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-
-            <li class="nav-item dropdown ms-2">
-              <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-translate"></i> <span id="langLabel">EN</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Legal Rex</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Pawan Kumar Gautam — Specialist in NABC, NAMC, Apostille, Notary Attestation; Family Lawyer at Karkardooma Court, Delhi.">
+    <meta name="theme-color" content="#0b3d91">
+  </head>
+  <body>
+    <!-- Decorative shapes -->
+    <div class="float-shapes" aria-hidden="true">
+      <span class="shape s1"></span>
+      <span class="shape s2"></span>
+      <span class="shape s3"></span>
+    </div>
+    <!-- Navbar -->
+    <header class="sticky-top">
+      <nav id="mainNavbar" class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="images/logo.png" alt="Legal Rex logo" class="brand-banner" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home" data-i18n="nav.home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whyLegalRex" data-i18n="nav.attestation">Why Legal Rex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services" data-i18n="nav.services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero banner -->
+    <section id="home" class="hero-section" role="region" aria-label="Hero">
+      <div class="hero-banner" role="img" aria-label="Court and justice banner" style="background-image: url('images/banner-hero.jpg');"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h1 class="display-5 heading-serif" data-i18n="hero.title">Legal Solutions You Can Trust</h1>
+            <!--<h3 class="mb-3">⚖ Legal Rex: A Summary of Capabilities and Focus</h3>-->
+            <p class="lead mt-3 text-muted" data-i18n="hero.intro"></p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <a id="whatsapp-cta" class="btn btn-success btn-lg d-flex align-items-center rounded-pill" href="https://wa.me/+919899223824" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp fs-5 me-2"></i>
+                <span data-i18n="cta.whatsapp">Chat on WhatsApp</span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
-                <li><button class="dropdown-item lang-switch" data-lang="en">English</button></li>
-                <li><button class="dropdown-item lang-switch" data-lang="hi">हिंदी</button></li>
-              </ul>
-            </li>
-          </ul>
+              <a class="btn btn-light btn-lg d-flex align-items-center rounded-pill" href="#contact" data-i18n="cta.inquiry">Submit Inquiry Form</a>
+              <a id="call-btn" class="btn btn-light btn-lg d-flex align-items-center rounded-pill" href="tel:+919899223824" target="_blank" rel="noopener noreferrer"> 📞 Call Us </a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="profile-frame shadow-lg">
+              <img id="profilePhoto" src="images/profile.png" alt="Pawan Kumar Gautam" class="profile-photo img-fluid rounded-circle" loading="lazy">
+            </div>
+            <div class="mt-3 text-muted small" data-i18n="hero.role">Pawan Kumar Gautam , Lawyer, Karkardooma Court</div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <!-- Hero banner -->
-  <section id="home" class="hero-section" role="region" aria-label="Hero">
-    <div class="hero-banner" role="img" aria-label="Court and justice banner" style="background-image: url('images/banner-hero.jpg');"></div>
-    <div class="container hero-content">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <h1 class="display-5 heading-serif" data-i18n="hero.title">Legal Solutions You Can Trust</h1>
-          <p class="lead mt-3 text-muted" data-i18n="hero.intro">
-            Pawan Kumar Gautam – Practicing lawyer specializing in NABC, NAMC, Apostille (MEA Attestation), Notary Attestation and family law. Dedicated to delivering justice with integrity.
-          </p>
-
-          <div class="mt-4 d-flex flex-wrap gap-2">
-            <a id="whatsapp-cta" class="btn btn-success btn-lg d-flex align-items-center" href="https://wa.me/<phone-number>" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-whatsapp fs-5 me-2"></i> <span data-i18n="cta.whatsapp">Chat on WhatsApp</span>
-            </a>
-
-            <a class="btn btn-light btn-lg text-dark border" href="#contact" data-i18n="cta.inquiry">Submit Inquiry Form</a>
+    </section>
+    <!-- Why Choose Legal Rex -->
+    <section id="whyLegalRex" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="heading-serif text-center">⚖️ Why Choose Legal Rex?</h2>
+        <p class="text-center text-muted mb-5">Practical legal solutions tailored to your needs.</p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 p-3">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-person-badge service-icon text-primary"></i>
+                <div class="ms-3">
+                  <h5>Experienced Team</h5>
+                  <p class="text-muted small">
+                  <ul>
+                    <li>
+                      <strong>Description: </strong>Their team has extensive experience. They are well-versed and stay up-to-date regarding their own subject-matter.
+                    </li>
+                    <li>
+                      <strong>Key takeaway: </strong>Expertise and current knowledge are core strengths.
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-5 text-center">
-          <div class="profile-frame shadow-lg">
-            <img id="profilePhoto" src="images/profile3.png" alt="Pawan Kumar Gautam" class="profile-photo img-fluid rounded-circle" loading="lazy">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 p-3">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-person-badge service-icon text-primary"></i>
+                <div class="ms-3">
+                  <h5>Aggressive Defense Strategies</h5>
+                  <p class="text-muted small">
+                  <ul>
+                    <li>
+                      <strong>Description: </strong>They scrutinize every document minutely to get a favourable outcome.
+                    </li>
+                    <li>
+                      <strong>Key takeaway: </strong>A commitment to thoroughness, detailed analysis, and achieving results for the client.
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mt-3 text-muted small" data-i18n="hero.role">Advocate & Family Lawyer, Karkardooma Court</div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 p-3">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-person-badge service-icon text-primary"></i>
+                <div class="ms-3">
+                  <h5>Client-Centered Approach</h5>
+                  <p class="text-muted small">
+                  <ul>
+                    <li>
+                      <strong>Description: </strong>They want to offer a compassionate environment by providing clear communication. Either physically or online.
+                    </li>
+                    <li>
+                      <strong>Key takeaway: </strong>Focus on compassion, clear communication, and a positive client experience.
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <B>In a Nutshell:</B> Legal Rex leverages a large network of highly experienced advocates and technical expertise to provide consistent, superior, and personalized online legal services, focusing on resolution and client satisfaction within the Indian Legal System.
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- About (merged content) -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="heading-serif">ABOUT US</h2>
-      <h3 class="mb-3">⚖ Legal Rex: A Summary of Capabilities and Focus</h3>
-      <p>Legal Rex is a small law firm with a worldwide client base, providing physical and online assistance for over 17 years. It emphasizes a blend of vast expertise and personalized service.</p>
-      <hr>
-
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Core Strengths &amp; Experience</h4>
-          <ul>
-            <li><strong>Extensive Network:</strong> Over 500 Associates across India, all enrolled with their State Bar Councils.</li>
-            <li><strong>Deep Experience:</strong> Associates in each state have more than 25 years of experience.</li>
-            <li><strong>Focus:</strong> Solely focused on client satisfaction by resolving their problems.</li>
-            <li><strong>Longevity:</strong> Serving clients for over 17 years.</li>
-          </ul>
-
-          <h4>Service Model &amp; Approach</h4>
-          <ul>
-            <li><strong>Client Satisfaction:</strong> Achieved by understanding and meeting client needs.</li>
-            <li><strong>Real Estate Expertise:</strong> Committed to closing tough real estate transactions smoothly.</li>
-            <li><strong>Online Service:</strong> Fully online service options available.</li>
-            <li><strong>Dual Nature:</strong> Large-scale capability with personalized representation.</li>
-          </ul>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Legal Focus &amp; Dispute Resolution</h4>
-          <ul>
-            <li><strong>Legal System:</strong> Focused on the Indian Legal System.</li>
-            <li><strong>Practice Areas:</strong> General legal matters, Intellectual Property, Taxation, Corporate, Cyber-crimes.</li>
-            <li><strong>ADR:</strong> Negotiations, Arbitration, Conciliation, Mediation.</li>
-            <li><strong>Litigation Avoidance:</strong> Pre-litigation research and case-law analysis to avoid prolonged litigation.</li>
-          </ul>
-
-          <h4>Future Outlook</h4>
-          <p>The firm is positioned to grow as the legal profession becomes more technology-driven and fast-paced.</p>
-        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="heading-serif text-center">ABOUT US </h2>
+        <p class="text-center text-muted mb-5">⚖ Legal Rex: A Summary of Capabilities and Focus</p>
+        <h4>Core Strengths &amp; Experience</h4>
+        <ul>
+          <li>
+            <strong>Extensive Network:</strong> Has over 500 Associates across India, all enrolled with their respective State Bar Councils.
+          </li>
+          <li>
+            <strong>Deep Experience:</strong> Associates in each state have more than 25 years of experience.
+          </li>
+          <li>
+            <strong>Focus:</strong> Solely focused on the satisfaction of clients by resolving their problems.
+          </li>
+          <li>
+            <strong>Longevity:</strong> Serving clients for over 17 years.
+          </li>
+        </ul>
+        <h4>Service Model &amp; Approach</h4>
+        <ul>
+          <li>
+            <strong>Client Satisfaction:</strong> Achieved by understanding and successfully meeting client needs.
+          </li>
+          <li>
+            <strong>Real Estate Expertise:</strong> Believes in doing "whatever it takes" to close even the toughest real estate transactions smoothly and on time.
+          </li>
+          <li>
+            <strong>Online Service:</strong> One of the few companies that provides totally online service to clients.
+          </li>
+          <li>
+            <strong>Dual Nature:</strong> Acts as a "vast firm" to concentrate on specific areas of law, but also a "slight firm" to encourage personalized representation with a congenial group of staff.
+          </li>
+          <li>
+            <strong>Process:</strong> On behalf of clients, they listen, talk to each other, and work together.
+          </li>
+        </ul>
+        <h4>Legal Focus &amp; Dispute Resolution</h4>
+        <ul>
+          <li>
+            <strong>Legal System:</strong> Believes in the Indian Legal System only.
+          </li>
+          <li>
+            <strong>Broad Practice Areas: Deals with:</strong>
+            <ol>
+              <li>Legal Matters (General)</li>
+              <li>Intellectual Property</li>
+              <li>Taxation</li>
+              <li>Corporate Matters</li>
+              <li>Cyber-crimes</li>
+            </ol>
+          </li>
+          <li>
+            <strong>Alternative Dispute Resolution (ADR): </strong>Can settle legal issues without actual litigation through:
+          </li>
+          <ol>
+            <li>Negotiations</li>
+            <li>Arbitration</li>
+            <li>Conciliation</li>
+            <li>Mediation</li>
+          </ol>
+          <li>
+            <strong>Litigation Avoidance:</strong> Considers interpretation of laws, current judgments, analysis of concerned case laws, and pre-litigation research to avoid lengthy and expensive litigation..
+          </li>
+        </ul>
+        <h4>Future Outlook</h4>
+        <p>The firm is positioned to become a great law firm in the coming future as the legal profession is becoming highly technology and fast.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="heading-serif text-center" data-i18n="services.title">Services</h2>
-      <p class="text-center text-muted mb-5" data-i18n="services.subtitle">Practical legal solutions tailored to your needs.</p>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-person-badge service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>Non Availability Birth Certificate (NABC)</h5>
-                <p class="text-muted small">Assistance with documentation and court procedures to obtain birth records when originals are missing.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-heart service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>Non Availability Marriage Certificate (NAMC)</h5>
-                <p class="text-muted small">Help to procure legal proof of marriage where a formal certificate is not available.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-globe service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>Apostille (MEA Attestation)</h5>
-                <p class="text-muted small">End-to-end handling for apostille/MEA attestation for documents to be used abroad.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-check2-square service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>Valid Outside India</h5>
-                <p class="text-muted small">Guidance to make documents legally valid and recognized outside India.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-file-earmark-check service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>Notary Attestation</h5>
-                <p class="text-muted small">Notary services and attestations for affidavits and legal documents.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card service-card h-100 p-3 highlight">
-            <div class="d-flex align-items-start">
-              <i class="bi bi-people service-icon text-primary"></i>
-              <div class="ms-3">
-                <h5>The best family lawyer in Delhi</h5>
-                <p class="text-muted small">Compassionate and experienced family law representation at Karkardooma Court and other forums.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
-
-  <!-- Attestation & Notary (detailed section) -->
-  <section id="attestation" class="py-5">
-    <div class="container">
-      <h2 class="heading-serif">Document Attestation & Apostille</h2>
-      <p>Comprehensive services for Attestation and Apostille to authenticate documents for international use.</p>
-
-      <div class="table-responsive mb-4">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Purpose</th>
-              <th>Requirement</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Attestation</td>
-              <td>Verifies the authenticity of documents for international use.</td>
-              <td>Required for documents used in most countries (local authentication).</td>
-            </tr>
-            <tr>
-              <td>Apostille</td>
-              <td>Specialized form of attestation for Hague Convention countries.</td>
-              <td>Required for member countries of The Hague Convention.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h4>The Apostille Process in India</h4>
-      <ol>
-        <li>Notary Verification and initial attestation</li>
-        <li>State-Level Attestation</li>
-        <li>Validation by the Ministry of External Affairs (MEA)</li>
-        <li>Final Apostille Stamp</li>
-      </ol>
-
-      <h4>Notary Attestation</h4>
-      <p>Notary verification certifies the authenticity of signatures and documents and is often required before further attestation or apostille steps.</p>
-
-      <h4>NABC, Birth Certificate &amp; Marriage Documents</h4>
-      <p>Legal Rex guides clients through Non-Availability of Birth Certificate (NABC), birth registration for unregistered births, Non-Availability of Marriage Certificate (NAMC), and obtaining a marriage certificate for unregistered marriages — handling evidence collection, affidavits, SDM procedures, and court applications when needed.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="heading-serif text-center" data-i18n="contact.title">Contact & Inquiries</h2>
-      <p class="text-center text-muted mb-4" data-i18n="contact.subtitle">Use the form below for inquiries or reach out via WhatsApp or phone.</p>
-
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <div class="card border-0 shadow-sm p-4">
-            <form id="contactForm" class="needs-validation" novalidate>
-              <input type="hidden" name="source" value="website">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Full name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                  <div class="invalid-feedback">Please enter your name.</div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="heading-serif text-center" data-i18n="services.title">Services</h2>
+        <p class="text-center text-muted mb-5" data-i18n="services.subtitle">Practical legal solutions tailored to your needs.</p>
+        <h2 class="heading-serif">Legal Rex: Document Attestation and Apostille Services</h2>
+        <p>Legal Rex offers comprehensive services for document Attestation and Apostille, which are vital processes for authenticating documents for international use.</p>
+        <div class="table-responsive mb-4">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Requirement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Attestation</td>
+                <td>Verifies the authenticity of documents for international use</td>
+                <td>Required for documents used in most countries (general authentication by local authorities)</td>
+              </tr>
+              <tr>
+                <td>Apostille</td>
+                <td>A specialized form of attestation that confirms the document is genuine and can be accepted by other member countries without further authentication</td>
+                <td>Required for documents used in countries that are members of The Hague Convention</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4>The Apostille Process in India</h4>
+        <p>The Apostille process, required for documents to be recognized internationally by Hague Convention countries, can be complex and typically involves multiple steps:</p>
+        <ol>
+          <li>Notary Verification, Attestation and Valid outside India Attestation</li>
+          <li>State-Level Attestation</li>
+          <li>
+            <B>Validation from a Designated Authority:</B> In India, this is the Ministry of External Affairs (MEA).
+          </li>
+          <li>Final Apostille Stamp</li>
+        </ol>
+        <h4>Legal Rex's Commitment</h4>
+        <ul>
+          <li>
+            <strong>Hassle-Free Experience:</strong> Legal Rex is committed to providing a hassle-free experience by guiding clients through the intricacies of the process.
+          </li>
+          <li>
+            <strong>Efficiency:</strong> The expert team streamlines the process to handle all stages efficiently, saving time and reducing stress.
+          </li>
+          <li>
+            <strong>Critical Importance:</strong> Properly attested/Apostilled documents are critical for various international purposes, including: <BR> o Applying for visas. <BR> o University admissions. <BR> o Setting up foreign business operations.
+          </li>
+          <li>
+            <strong>Goal:</strong> To ensure documents are correctly authenticated so clients can confidently proceed with their international endeavours’ without legal complications or delays.
+          </li>
+        </ul>
+        <h2 class="heading-serif">Legal Rex: Notary Attestation Services</h2>
+        <p>Legal Rex provides comprehensive Notary Verification, Attestation and Valid outside India Attestation, a crucial legal procedure involving a licensed notary public who verifies the authenticity of signatures, documents, and transactions.</p>
+        <h4>Key Role of Notary Attestation</h4>
+        <ul>
+          <li>
+            <strong>Verification of Authenticity:</strong> The core function is verifying the authenticity of signatures, documents, and transactions.
+          </li>
+          <li>
+            <strong>Ensures Credibility:</strong>Ensures documents are credible and can be trusted by all parties involved.
+          </li>
+          <li>
+            <strong>Deterrence against Fraud:</strong>Serves to deter fraud and ensures all parties understand the implications of the documents they are signing.
+          </li>
+          <li>
+            <strong>Legal Legitimacy:</strong> Notarized documents carry a higher level of legitimacy and are often required for official purposes.
+          </li>
+        </ul>
+        <h4>When Notary Attestation is Essential</h4>
+        <p>This legal procedure is essential for various situations, including:</p>
+        <ul>
+          <li>Property Transactions</li>
+          <li>Property Transactions</li>
+          <li>Legal Agreements</li>
+          <li>Official Documentation</li>
+          <li>Applying for Visas</li>
+          <li>Government Services</li>
+          <li>Legal Proceedings</li>
+        </ul>
+        <h4>Legal Rex's Commitment to Clients</h4>
+        <div class="table-responsive mb-4">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Expertise</td>
+                <td>Experienced notaries are well-versed in the legal requirements for different types of documents</td>
+              </tr>
+              <tr>
+                <td>Process Guidance</td>
+                <td>Guides clients through the notary process, helping them prepare the necessary documents and ensuring compliance with all relevant legal standards</td>
+              </tr>
+              <tr>
+                <td>Consultation</td>
+                <td>Advises clients on the best practices for notarizing various documents, emphasizing the importance of protecting their legal rights</td>
+              </tr>
+              <tr>
+                <td>Service Goal</td>
+                <td>Committed to delivering a seamless, efficient, prompt, and reliable attestation process, providing clients with peace of mind</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Legal Rex aims to make the attestation process as smooth and straightforward as possible, empowering clients to move forward with confidence, knowing their documents are <B>legally binding and recognized by authorities.</B>
+        </p>
+        <h4>The Apostille Process in India</h4>
+        <p>The Apostille process, required for documents to be recognized internationally by Hague Convention countries, can be complex and typically involves multiple steps:</p>
+        <ol>
+          <li>Notary Verification, Attestation and Valid outside India Attestation</li>
+          <li>State-Level Attestation</li>
+          <li>
+            <B>Validation from a Designated Authority:</B> In India, this is the Ministry of External Affairs (MEA).
+          </li>
+          <li>Final Apostille Stamp</li>
+        </ol>
+        <BR>
+        <h2 class="heading-serif">Legal Rex: Non-Availability of Birth Certificate (NABC) Assistance</h2>
+        <p>Legal Rex specializes in online assisting individuals with obtaining the Non-Availability of Birth Certificate (NABC), a crucial document for those who cannot secure a traditional birth certificate due to administrative or registration challenges.</p>
+        <h4>Importance of the NABC</h4>
+        <p>The NABC serves as an official acknowledgment of an individual's birth when a standard birth certificate is unavailable. It is essential for various legal and administrative processes:</p>
+        <ul>
+          <li> Applying for government identification (IDs). </li>
+          <li> School admissions. </li>
+          <li> Passport applications. </li>
+          <li> Establishing identity, nationality, and eligibility for various benefits and rights. </li>
+        </ul>
+        <BR>
+        <h4>Reasons for Needing an NABC</h4>
+        <p>Individuals may require an NABC due to reasons such as:</p>
+        <ul>
+          <li> Hospital records being lost. </li>
+          <li> Births occurring <B>at home without formal registration.</B>
+          </li>
+          <li> Other administrative challenges preventing the issuance of a traditional certificate. </li>
+        </ul>
+        <BR>
+        <h4>The Process and Legal Rex's Role</h4>
+        <p>To secure an NABC, individuals must provide evidence of their birth. Legal Rex's experienced legal team guides clients through the collection and submission of the required documentation:</p>
+        <div class="table-responsive mb-4">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Required Documentation (Examples)</th>
+                <th>Legal Rex's Assistance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>*Affidavits from parents or guardians</td>
+                <td>*Guides clients in collecting and preparing the necessary evidence</td>
+              </tr>
+              <tr>
+                <td>*Witness statements</td>
+                <td>*Ensures compliance with specific requirements set by local authorities</td>
+              </tr>
+              <tr>
+                <td>*Any other supporting documentation verifying the date and place of birth</td>
+                <td>*Provides personalized support for unique challenges to facilitate the successful acquisition of the NABC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4>Commitment to Clients</h4>
+        <p>Legal Rex is dedicated to helping clients navigate the complexities of obtaining an NABC, empowering them to take charge of their legal status and personal affairs. Their goal is to provide comprehensive support and expert guidance to ensure individuals have the necessary documentation to move forward confidently.</p>
+        <BR>
+        <h2 class="heading-serif">THE BEST FAMILY LEGAL ADVISER / ADVOCATE IN DELHI</h2>
+        <BR>
+        <h4>🏡 Family Law: Core Areas and Emotional Context</h4>
+        <p> This is an excellent summary of the scope of Family Law and the compassionate, comprehensive approach Legal Rex takes in this emotionally sensitive area. <BR> Here is a structured overview of the key areas of family law and Legal Rex's role: <BR> Family law is the branch of the legal system dedicated to matters involving familial relationships. It is inherently challenging as it deals with personal, often emotionally charged, situations. </p>
+        <BR>
+        <h4>Key Areas Covered</h4>
+        <ul>
+          <li> Marriage and Divorce/Separation </li>
+          <li> Child Custody and Support </li>
+          <li> Alimony and Spousal Support </li>
+          <li> Division of Property (Matrimonial Assets) </li>
+          <li> Adoption and Guardianship </li>
+          <li> Dowry Harassment Cases </li>
+        </ul>
+        <BR>
+        <h4>💔 Divorce and Separation Services</h4>
+        <p>Divorce and separation proceedings require careful legal guidance to ensure a fair transition for all parties. </P>
+        <BR>
+        <h4>Legal Rex's Role</h4>
+        <ul>
+          <li>
+            <strong>Comprehensive Guidance:</strong> The team provides support through every stage of the divorce process.
+          </li>
+          <li>
+            <strong>Financial Matters:</strong> Assisting clients in matters concerning: <BR>
+            <strong>o Alimony (Maintenance):</strong> Financial provision for a dependent spouse. <BR>
+            <strong>o Division of Property:</strong> Fair and equitable distribution of marital assets and debts.
+          </li>
+          <li>
+            <strong>Strategic Representation:</strong> Striving to achieve settlements that prioritize the financial and emotional well-being of all involved, with special attention to the interests of the children.
+          </li>
+          <li>
+            <strong>Amicable Dispute Resolution:</strong> Offering compassionate and strategic representation aimed at resolving disputes amicably where possible.
+          </li>
+        </ul>
+        <BR>
+        <h4>👶 Child Custody and Support</h4>
+        <p>These are critical aspects of family law where the primary focus is the well-being and future of the children. </P>
+        <BR>
+        <h4>The Guiding Principle</h4>
+        <p>Courts and legal professionals prioritize the "Best Interests of the Child" in all custody and support decisions. This includes their emotional, educational, financial, and physical stability. </P>
+        <BR>
+        <h4>Legal Rex's Focus</h4>
+        <ul>
+          <li>
+            <strong>Prioritizing Child Welfare:</strong> Working diligently to secure arrangements that genuinely serve the children's best interests.
+          </li>
+          <li>
+            <strong>Custody Arrangements:</strong> Advocating for fair terms regarding: <BR>
+            <strong>o Care and Custody:</strong> Determining physical residence and legal decision-making authority. <BR>
+            <strong>o Visitation/Contact:</strong> Establishing clear schedules for the non-custodial parent.
+          </li>
+          <li>
+            <strong>Financial Stability (Child Support):</strong> Ensuring clients understand their financial rights and obligations, advocating for terms that promote the child’s financial stability. .
+          </li>
+          <li>
+            <strong>Thoughtful Solutions:</strong> Providing balanced and thoughtful legal solutions to safeguard the future of the family unit post-separation.
+          </li>
+        </ul>
+        <!------------------!><BR><h2 class="heading-serif">DOWRY HARASSMENT CASES</h2><p>This is a strong, clear, and compassionate legal services profile focusing on dowry harassment cases. It effectively combines key legal information with a commitment to client support.</p><p>Here is a brief analysis of its strengths and a suggestion for a title:</p><h4>⚖️ Analysis of the Content</h4><p>The text is excellent for a legal firm's profile or website section.</p><ul><li><strong>Clarity and Detail:</strong> It clearly defines the issue, specifies the relevant Indian laws (Dowry Prohibition Act, 1961 and Section 498A of the IPC), and outlines the potential legal outcomes (arrest, compensation, imprisonment).
+          </li><li><strong>Focus on Client Support:</strong> It emphasizes the compassion, sensitivity, and protection offered by Legal Rex, recognizing the immense emotional and social pressure victim’s face.
+          </li><li><strong>Actionable Steps:</strong> It mentions practical legal support, such as guiding clients in filing complaints, gathering evidence, and securing restraining orders.
+          </li></ul></div></div></section>
+																												<!-- Contact -->
+        <section id="contact" class="py-5 bg-light">
+          <div class="container">
+            <h2 class="heading-serif text-center" data-i18n="contact.title">Contact & Inquiries</h2>
+            <p class="text-center text-muted mb-4" data-i18n="contact.subtitle">Use the form below for inquiries or reach out via WhatsApp or phone.</p>
+            <div class="row g-4">
+              <div class="col-lg-7">
+                <div class="card border-0 shadow-sm p-4">
+                  <form id="contactForm" class="needs-validation" novalidate>
+                    <input type="hidden" name="source" value="website">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="name" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Enter a valid email.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9+()\- ]{6,}" required>
+                        <div class="invalid-feedback">Enter a valid phone number.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="service" class="form-label">Service</label>
+                        <select id="service" name="service" class="form-select" required>
+                          <option value="">Choose...</option>
+                          <option>Non Availability Birth Certificate (NABC)</option>
+                          <option>Non Availability Marriage Certificate (NAMC)</option>
+                          <option>Apostille (MEA Attestation)</option>
+                          <option>Valid Outside India</option>
+                          <option>Notary Attestation</option>
+                          <option>The best family lawyer in Delhi</option>
+                        </select>
+                        <div class="invalid-feedback">Please select a service.</div>
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Message / Details</label>
+                        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        <div class="invalid-feedback">Please provide some details.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="prefDate" class="form-label">Preferred date</label>
+                        <input type="date" id="prefDate" name="preferred_date" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="prefTime" class="form-label">Preferred time</label>
+                        <input type="time" id="prefTime" name="preferred_time" class="form-control">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="yes" id="consent" name="consent" required>
+                          <label class="form-check-label" for="consent">I agree to be contacted regarding this inquiry.</label>
+                          <div class="invalid-feedback">Please consent to be contacted.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div id="formAlert" role="status" aria-live="polite" class="mb-2"></div>
+                        <button id="formSubmit" type="submit" class="btn btn-accent btn-lg">Submit Query</button>
+                        <button id="formClear" type="button" class="btn btn-outline-secondary ms-2">Clear</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="col-md-6">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                  <div class="invalid-feedback">Enter a valid email.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9+()\- ]{6,}" required>
-                  <div class="invalid-feedback">Enter a valid phone number.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="service" class="form-label">Service</label>
-                  <select id="service" name="service" class="form-select" required>
-                    <option value="">Choose...</option>
-                    <option>Non Availability Birth Certificate (NABC)</option>
-                    <option>Non Availability Marriage Certificate (NAMC)</option>
-                    <option>Apostille (MEA Attestation)</option>
-                    <option>Valid Outside India</option>
-                    <option>Notary Attestation</option>
-                    <option>The best family lawyer in Delhi</option>
-                  </select>
-                  <div class="invalid-feedback">Please select a service.</div>
-                </div>
-
-                <div class="col-12">
-                  <label for="message" class="form-label">Message / Details</label>
-                  <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
-                  <div class="invalid-feedback">Please provide some details.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="prefDate" class="form-label">Preferred date</label>
-                  <input type="date" id="prefDate" name="preferred_date" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label for="prefTime" class="form-label">Preferred time</label>
-                  <input type="time" id="prefTime" name="preferred_time" class="form-control">
-                </div>
-
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="yes" id="consent" name="consent" required>
-                    <label class="form-check-label" for="consent">I agree to be contacted regarding this inquiry.</label>
-                    <div class="invalid-feedback">Please consent to be contacted.</div>
+              </div>
+              <div class="col-lg-5">
+                <div class="card border-0 shadow-sm p-3">
+                  <div class="card-body">
+                    <h5>Office</h5>
+                    <p class="text-muted mb-1">
+                      <strong>Phone:</strong>
+                      <a id="phoneLink" href="tel:+919899223824">+91-9899223824</a>
+                    </p>
+                    <p class="text-muted mb-1">
+                      <strong>Email:</strong>
+                      <a id="emailLink" href="mailto:thelegalrex@gmail.com">thelegalrex@gmail.com</a>
+                    </p>
+                    <p class="text-muted mb-3">
+                      <strong>Address:</strong> Karkardooma Court Complex, Karkardooma, Delhi - 110032
+                    </p>
+                    <a class="btn btn-success w-100 mb-3" id="whatsappContact" href="https://wa.me/+919899223824" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-whatsapp"></i> Message on WhatsApp </a>
+                    <h6 class="mt-3">Location</h6>
+                    <div class="ratio ratio-16x9 mt-2 rounded overflow-hidden">
+                      <!-- Replace with your Google Maps embed URL -->
+                      <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.18925342669!2d77.29390057537006!3d28.654051483103267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbaf3b9bcd0f%3A0xeee250f19be32301!2sKarkardooma%20Court!5e0!3m2!1sen!2sin!4v1765699822146!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office Location"></iframe>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-12">
-                  <div id="formAlert" role="status" aria-live="polite" class="mb-2"></div>
-                  <button id="formSubmit" type="submit" class="btn btn-accent btn-lg">Submit Query</button>
-                  <button id="formClear" type="button" class="btn btn-outline-secondary ms-2">Clear</button>
-                </div>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="card border-0 shadow-sm p-3">
-            <div class="card-body">
-              <h5>Office</h5>
-              <p class="text-muted mb-1"><strong>Phone:</strong> <a id="phoneLink" href="tel:+919812345678">+91-9812345678</a></p>
-              <p class="text-muted mb-1"><strong>Email:</strong> <a id="emailLink" href="mailto:pawangautam@example.com">pawangautam@example.com</a></p>
-              <p class="text-muted mb-3"><strong>Address:</strong> Karkardooma Court Complex, Karkardooma, Delhi - 110032</p>
-
-              <a class="btn btn-success w-100 mb-3" id="whatsappContact" href="https://wa.me/<phone-number>" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i> Message on WhatsApp
+        </section>
+        <!-- Footer -->
+        <footer class="py-4">
+          <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div>
+              <small>&copy; <span id="currentYear"></span> Pawan Kumar Gautam — Legal Rex </small>
+            </div>
+            <div>
+              <a class="me-3 text-muted" href="#" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
               </a>
-
-              <h6 class="mt-3">Location</h6>
-              <div class="ratio ratio-16x9 mt-2 rounded overflow-hidden">
-                <!-- Replace with your Google Maps embed URL -->
-                <iframe id="gmap" src="https://www.google.com/maps/embed?pb=..." style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office Location"></iframe>
+              <a class="me-3 text-muted" href="#" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a class="text-muted" href="#" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <!-- Terms & Conditions Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="termsModalLabel">WELCOME TO THE LEGAL REX</h5>
+              </div>
+              <div class="modal-body">
+                <p> By clicking ‘AGREE,’ the user acknowledges that: <BR> They seek information about THE LEGAL REX, its practice areas, and its lawyers in Delhi for personal use. The provided information is solely at the user's request, and accessing or downloading materials from this site does not establish a lawyer-client relationship. The website’s content is for informational purposes only and does not constitute legal advice. THE LEGAL REX – Lawyer in Delhi is not responsible for any actions taken based on the website’s content. Users with legal concerns should seek independent legal counsel. </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="declineBtn">Decline</button>
+                <button type="button" class="btn btn-primary" id="acceptBtn">Accept</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div>
-        <small>&copy; <span id="currentYear"></span> Pawan Kumar Gautam — Legal Rex</small>
-      </div>
-      <div>
-        <a class="me-3 text-muted" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a class="me-3 text-muted" href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-        <a class="text-muted" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
-  <script src="js/script.js"></script>
-</body>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            // Check if the user has already accepted
+            if (!localStorage.getItem("termsAccepted")) {
+              var termsModal = new bootstrap.Modal(document.getElementById('termsModal'));
+              termsModal.show();
+              // Accept button
+              document.getElementById("acceptBtn").addEventListener("click", function() {
+                localStorage.setItem("termsAccepted", "true");
+                termsModal.hide();
+              });
+              // Decline button
+              document.getElementById("declineBtn").addEventListener("click", function() {
+                alert("You must accept Terms & Conditions to use this website.");
+                // Optionally redirect to another page
+                // window.location.href = "https://www.google.com";
+              });
+            }
+          });
+        </script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+  </body>
 </html>

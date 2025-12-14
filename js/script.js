@@ -5,7 +5,7 @@ const FORM_ENDPOINT = 'https://formspree.io/f/your-form-id'; // <-- replace this
 const i18n = {
   en: {
     'nav.home':'Home','nav.about':'About','nav.services':'Services','nav.contact':'Contact','nav.book':'Book Appointment',
-    'hero.title':'Legal Solutions You Can Trust','hero.intro':'Pawan Kumar Gautam – Practicing lawyer specializing in NABC, NAMC, Apostille (MEA Attestation), Notary Attestation and family law. Dedicated to delivering justice with integrity.','hero.role':'Advocate & Family Lawyer, Karkardooma Court',
+    'hero.title':'Legal Solutions You Can Trust','hero.intro':'Legal Rex is a small law firm with a worldwide client base, providing physical and online assistance for over 17 years. It emphasizes a blend of vast expertise and personalized service.',
     'cta.whatsapp':'Chat on WhatsApp','cta.book':'Book Appointment','cta.inquiry':'Submit Inquiry Form',
     'about.title':'About Pawan Kumar Gautam','about.bio':'[Placeholder bio] Pawan Kumar Gautam is an experienced advocate serving clients at Karkardooma Court, Delhi. He focuses on practical, compassionate representation across family, civil, and attestation matters.','about.expertTitle':'Qualifications & Expertise','about.practiceAreas':'Practice Areas','about.blurb':'Focused, experienced counsel across a wide spectrum of legal needs.',
     'service.nabc':'Non Availability Birth Certificate (NABC)','service.namc':'Non Availability Marriage Certificate (NAMC)','service.apostille':'Apostille (MEA Attestation)','service.notary':'Notary Attestation',
