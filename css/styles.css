@@ -33,7 +33,14 @@ body{
 /* Navbar */
 /*.navbar{ background:transparent; padding:0.9rem 0; z-index:1100; position:relative; }*/
 .brand-logo{ width:60px; height:60px; object-fit:cover; border-radius:8px; }
-.brand-banner{ width:270px; height:110px;  object-fit:cover; border-radius:8px; }
+/*.brand-banner{ width:270px; height:110px;  object-fit:cover; border-radius:8px; }*/
+.brand-banner{
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
 .brand-title{ font-family: 'Playfair Display', serif; font-weight:700; color:var(--primary); }
 .navbar { position: fixed;top: 0;left: 0; width: 100%; transition: transform 0.35s ease, background 0.3s ease;will-change: transform;}
 .navbar-hide {transform: translateY(-120%);S}
@@ -137,4 +144,13 @@ footer{ background:transparent; color:var(--muted); }
     ul li a:hover {
         transform: scale(1.1);
     }
+	
+	@media (max-width: 768px){
+  .brand-banner{
+    max-height: 50px;
+  }
+}
 
+.navbar {
+  padding: 0.5rem 0;
+}
